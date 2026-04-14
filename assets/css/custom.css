@@ -1,37 +1,40 @@
 /* ==========================================================================
    Custom styles for Xinyue Zhang's academic site
-   Aesthetic: warm cream background, serif typography, reading-notebook feel
-   Drop this file at: assets/css/custom.css
-   And include it via: _includes/head/custom.html
+   Aesthetic: Notion-inspired — white background, serif typography,
+   restrained accents, generous whitespace
    ========================================================================== */
 
-/* --- Google Fonts ------------------------------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300..700;1,300..700&family=Inter:wght@400;500;600&display=swap');
 
-/* --- Color palette (warm, low-saturation) ------------------------------- */
 :root {
-  --paper:        #faf6ef;   /* cream background */
-  --paper-soft:   #f3ede2;   /* slightly darker cream for cards/accents */
-  --ink:          #2b241e;   /* warm near-black for body text */
-  --ink-soft:     #5a4f44;   /* secondary text */
-  --ink-faint:    #8a7d6f;   /* muted captions */
-  --accent:       #a8472b;   /* terracotta — links, highlights */
-  --accent-soft:  #c97a5b;   /* hover */
-  --sage:         #6e7f5c;   /* soft sage for secondary tags */
-  --gold:         #b8893a;   /* warm gold for awards */
-  --hairline:     #e3dccf;   /* divider lines */
-  --shadow:       0 1px 2px rgba(60, 45, 30, 0.04),
-                  0 8px 24px rgba(60, 45, 30, 0.06);
+  --bg:           #ffffff;
+  --bg-soft:      #f7f6f3;
+  --bg-hover:     #f1f0ed;
+  --ink:          #37352f;
+  --ink-soft:     #5f5b54;
+  --ink-faint:    #9b9a97;
+  --accent:       #a8472b;
+  --accent-soft:  #c97a5b;
+  --sage:         #6e7f5c;
+  --gold:         #b8893a;
+  --hairline:     #e9e9e7;
+  --hairline-soft:#f0efed;
+  --shadow:       0 1px 2px rgba(15, 15, 15, 0.03),
+                  0 4px 12px rgba(15, 15, 15, 0.04);
 }
 
-/* --- Global background and typography ----------------------------------- */
+/* --- Global background -------------------------------------------------- */
+html,
 body,
-.page__content,
 .page,
+.page__content,
 .masthead,
+.masthead__inner-wrap,
 .greedy-nav,
-.sidebar {
-  background-color: var(--paper) !important;
+.sidebar,
+.initial-content,
+.layout--single {
+  background-color: var(--bg) !important;
 }
 
 body,
@@ -40,26 +43,23 @@ body,
 .page__content li {
   font-family: 'Crimson Pro', 'Source Serif Pro', Georgia, serif !important;
   font-size: 1.08rem;
-  line-height: 1.72;
+  line-height: 1.7;
   color: var(--ink);
-  font-weight: 380;
+  font-weight: 400;
 }
 
-.page__content p {
-  margin-bottom: 1.1em;
-}
+.page__content p { margin-bottom: 1.05em; }
 
-/* Headings — same serif, slightly tighter, warm color */
+/* --- Headings ----------------------------------------------------------- */
 .page__content h1,
 .page__content h2,
 .page__content h3,
-.page__content h4,
 .page__title {
   font-family: 'Crimson Pro', Georgia, serif !important;
   color: var(--ink) !important;
   font-weight: 600;
   letter-spacing: -0.01em;
-  line-height: 1.25;
+  line-height: 1.3;
 }
 
 .page__title {
@@ -71,72 +71,71 @@ body,
 }
 
 .page__content h2 {
-  font-size: 1.7rem;
+  font-size: 1.65rem;
   margin-top: 2.6rem;
   margin-bottom: 1rem;
-  padding-bottom: 0.4rem;
+  padding-bottom: 0.5rem;
   border-bottom: 1px solid var(--hairline);
 }
 
 .page__content h3 {
-  font-size: 1.35rem;
+  font-size: 1.3rem;
   margin-top: 1.6rem;
 }
 
-/* Horizontal rules — hairline, not heavy */
 .page__content hr {
   border: 0;
   border-top: 1px solid var(--hairline);
   margin: 2.4rem 0;
 }
 
-/* Links — terracotta with subtle underline */
+/* --- Links -------------------------------------------------------------- */
 .page__content a,
 .page__content a:visited {
-  color: var(--accent);
+  color: var(--ink);
   text-decoration: none;
-  border-bottom: 1px solid rgba(168, 71, 43, 0.25);
-  transition: all 0.2s ease;
+  border-bottom: 1px solid var(--hairline);
+  transition: all 0.15s ease;
+  padding-bottom: 1px;
 }
 
 .page__content a:hover {
-  color: var(--accent-soft);
-  border-bottom-color: var(--accent-soft);
+  border-bottom-color: var(--accent);
+  color: var(--accent);
 }
 
-/* Bold — warm dark, not pure black */
-.page__content strong,
-.page__content b {
-  color: var(--ink);
-  font-weight: 600;
-}
+.page__content strong { color: var(--ink); font-weight: 600; }
+.page__content em     { color: var(--ink-soft); font-style: italic; }
 
-/* Emphasis */
-.page__content em {
-  color: var(--ink-soft);
-  font-style: italic;
-}
-
-/* --- Navigation bar ----------------------------------------------------- */
+/* --- Navigation --------------------------------------------------------- */
 .masthead {
   border-bottom: 1px solid var(--hairline) !important;
   box-shadow: none !important;
+  background-color: var(--bg) !important;
 }
 
-.greedy-nav {
-  background-color: var(--paper) !important;
+.masthead__inner-wrap {
+  background-color: var(--bg) !important;
+  padding: 0.8rem 1rem;
+}
+
+.greedy-nav,
+.greedy-nav button {
+  background-color: var(--bg) !important;
 }
 
 .greedy-nav a {
   font-family: 'Inter', -apple-system, sans-serif !important;
-  font-size: 0.9rem !important;
+  font-size: 0.88rem !important;
   font-weight: 500;
   color: var(--ink-soft) !important;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
+  background: transparent !important;
 }
 
 .greedy-nav a:hover {
   color: var(--accent) !important;
+  background: var(--bg-soft) !important;
 }
 
 .greedy-nav .site-title {
@@ -144,15 +143,15 @@ body,
   font-style: italic;
   font-weight: 500;
   color: var(--ink) !important;
-  font-size: 1.15rem !important;
+  font-size: 1.2rem !important;
 }
 
-/* --- Sidebar (author profile) ------------------------------------------- */
+/* --- Sidebar ------------------------------------------------------------ */
 .sidebar .author__name {
   font-family: 'Crimson Pro', Georgia, serif !important;
   font-weight: 600;
   color: var(--ink) !important;
-  font-size: 1.2rem;
+  font-size: 1.18rem;
 }
 
 .sidebar .author__pronouns,
@@ -164,7 +163,7 @@ body,
 }
 
 .sidebar .author__avatar img {
-  border: 3px solid var(--paper-soft);
+  border: 1px solid var(--hairline);
   box-shadow: var(--shadow);
 }
 
@@ -173,32 +172,30 @@ body,
   border-bottom: none !important;
 }
 
-.sidebar .author__urls a:hover {
-  color: var(--accent) !important;
-}
+.sidebar .author__urls a:hover { color: var(--accent) !important; }
 
-/* --- Home page intro block ---------------------------------------------- */
+/* --- Home intro --------------------------------------------------------- */
 .home-intro {
-  font-size: 1.12rem;
+  font-size: 1.1rem;
   line-height: 1.78;
   color: var(--ink);
 }
 
 .home-intro p:first-of-type::first-letter {
-  font-size: 2.4em;
+  font-size: 2.6em;
   float: left;
   line-height: 0.9;
-  padding: 0.1em 0.1em 0 0;
+  padding: 0.08em 0.12em 0 0;
   font-weight: 500;
   color: var(--accent);
+  font-style: italic;
 }
 
-/* --- Research page intro ------------------------------------------------ */
+/* --- Research intro ----------------------------------------------------- */
 .research-intro {
-  font-size: 1.1rem;
+  font-size: 1.08rem;
   line-height: 1.75;
-  color: var(--ink);
-  padding: 1.4rem 0 0.4rem;
+  padding: 1rem 0 0.4rem;
 }
 
 .research-intro ul {
@@ -208,42 +205,26 @@ body,
 }
 
 .research-intro li {
-  padding: 0.6rem 0 0.6rem 1.2rem;
+  padding: 0.7rem 1rem;
   border-left: 3px solid var(--accent);
-  margin-bottom: 0.8rem;
-  background-color: var(--paper-soft);
-  padding-left: 1rem;
+  margin-bottom: 0.6rem;
+  background-color: var(--bg-soft);
   border-radius: 0 4px 4px 0;
 }
 
 /* --- Project cards ------------------------------------------------------ */
 .project-card {
-  background: #ffffff;
+  background: var(--bg);
   border: 1px solid var(--hairline);
   border-radius: 6px;
-  padding: 1.8rem 2rem;
-  margin: 1.8rem 0;
-  box-shadow: var(--shadow);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-  position: relative;
+  padding: 1.6rem 1.8rem;
+  margin: 1.4rem 0;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .project-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 2px 4px rgba(60, 45, 30, 0.05),
-              0 16px 36px rgba(60, 45, 30, 0.1);
-}
-
-.project-card::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 1.8rem;
-  bottom: 1.8rem;
-  width: 3px;
-  background: var(--accent);
-  border-radius: 0 2px 2px 0;
-  opacity: 0.7;
+  border-color: #d4d3cf;
+  box-shadow: var(--shadow);
 }
 
 .project-card .project-header {
@@ -252,12 +233,12 @@ body,
   align-items: flex-start;
   flex-wrap: wrap;
   gap: 0.6rem;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.3rem;
 }
 
 .project-card h3 {
   margin: 0 !important;
-  font-size: 1.4rem !important;
+  font-size: 1.32rem !important;
   font-weight: 600;
   color: var(--ink) !important;
 }
@@ -265,19 +246,20 @@ body,
 .project-card .project-subtitle {
   font-style: italic;
   color: var(--ink-soft);
-  margin: 0.2rem 0 1.1rem;
-  font-size: 1.02rem;
+  margin: 0.2rem 0 1rem;
+  font-size: 1rem;
   line-height: 1.4;
 }
 
 .project-card p {
-  margin-bottom: 0.85em;
+  margin-bottom: 0.8em;
+  font-size: 1.02rem;
 }
 
 .project-card strong:first-child {
-  color: var(--accent);
+  color: var(--ink);
   font-variant: small-caps;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.05em;
   font-weight: 600;
   font-size: 0.95em;
 }
@@ -286,39 +268,139 @@ body,
 .status {
   display: inline-block;
   font-family: 'Inter', sans-serif;
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   font-weight: 500;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  padding: 0.3rem 0.7rem;
-  border-radius: 999px;
+  padding: 0.28rem 0.7rem;
+  border-radius: 4px;
   white-space: nowrap;
   align-self: center;
 }
 
-.status-award      { background: rgba(184, 137, 58, 0.14); color: var(--gold); border: 1px solid rgba(184, 137, 58, 0.3); }
-.status-published  { background: rgba(110, 127, 92, 0.14); color: var(--sage); border: 1px solid rgba(110, 127, 92, 0.3); }
-.status-review     { background: rgba(168, 71, 43, 0.10); color: var(--accent); border: 1px solid rgba(168, 71, 43, 0.25); }
-.status-progress   { background: var(--paper-soft); color: var(--ink-soft); border: 1px solid var(--hairline); }
-.status-conference { background: rgba(110, 127, 92, 0.10); color: var(--sage); border: 1px solid rgba(110, 127, 92, 0.25); }
+.status-award      { background: rgba(184, 137, 58, 0.10); color: var(--gold); }
+.status-published  { background: rgba(110, 127, 92, 0.10); color: var(--sage); }
+.status-review     { background: rgba(168, 71, 43, 0.08); color: var(--accent); }
+.status-progress   { background: var(--bg-soft); color: var(--ink-soft); }
+.status-conference { background: rgba(110, 127, 92, 0.08); color: var(--sage); }
 
-/* --- Selected highlights bullets on home page --------------------------- */
-.page__content ul li {
-  margin-bottom: 0.4rem;
+/* --- Publications ------------------------------------------------------- */
+.pub-section { margin: 1.5rem 0 2.2rem; }
+
+.pub-entry {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--hairline-soft);
 }
 
-/* --- Code & blockquotes (warm) ------------------------------------------ */
+.pub-entry:last-child { border-bottom: none; }
+
+.pub-entry .pub-title {
+  font-weight: 600;
+  color: var(--ink);
+  font-size: 1.08rem;
+  margin-bottom: 0.2rem;
+  display: block;
+}
+
+.pub-entry .pub-authors {
+  color: var(--ink-soft);
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.pub-entry .pub-authors .me {
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.pub-entry .pub-venue {
+  font-style: italic;
+  color: var(--ink-soft);
+  font-size: 0.98rem;
+}
+
+.pub-entry .pub-tag {
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.18rem 0.55rem;
+  border-radius: 3px;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+  background: rgba(184, 137, 58, 0.10);
+  color: var(--gold);
+}
+
+/* --- CV page ------------------------------------------------------------ */
+.cv-section { margin: 1.4rem 0 2rem; }
+
+.cv-entry {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 1.2rem;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--hairline-soft);
+}
+
+.cv-entry:last-child { border-bottom: none; }
+
+.cv-entry .cv-date {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.85rem;
+  color: var(--ink-faint);
+  padding-top: 0.2rem;
+}
+
+.cv-entry .cv-content .cv-title {
+  font-weight: 600;
+  color: var(--ink);
+  display: block;
+  margin-bottom: 0.15rem;
+}
+
+.cv-entry .cv-content .cv-sub {
+  color: var(--ink-soft);
+  font-style: italic;
+  font-size: 0.98rem;
+}
+
+.cv-download {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.55rem 1.1rem;
+  background: var(--bg-soft) !important;
+  color: var(--ink) !important;
+  border: 1px solid var(--hairline) !important;
+  border-radius: 5px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none !important;
+  transition: background 0.15s ease;
+}
+
+.cv-download:hover {
+  background: var(--bg-hover) !important;
+  border-color: #d4d3cf !important;
+  color: var(--ink) !important;
+}
+
+/* --- Blockquotes & code ------------------------------------------------- */
 .page__content blockquote {
   border-left: 3px solid var(--accent);
-  background: var(--paper-soft);
+  background: var(--bg-soft);
   padding: 0.8rem 1.2rem;
   font-style: italic;
   color: var(--ink-soft);
   margin: 1.4rem 0;
+  border-radius: 0 4px 4px 0;
 }
 
 .page__content code {
-  background: var(--paper-soft);
+  background: var(--bg-soft);
   color: var(--accent);
   padding: 0.1rem 0.4rem;
   border-radius: 3px;
@@ -327,25 +409,28 @@ body,
 
 /* --- Footer ------------------------------------------------------------- */
 .page__footer {
-  background-color: var(--paper-soft) !important;
+  background-color: var(--bg) !important;
   border-top: 1px solid var(--hairline);
   color: var(--ink-faint);
 }
 
 .page__footer a {
   color: var(--ink-soft) !important;
+  border-bottom: none !important;
 }
+
+.page__footer a:hover { color: var(--accent) !important; }
 
 /* --- Responsive --------------------------------------------------------- */
 @media (max-width: 768px) {
-  .project-card {
-    padding: 1.4rem 1.2rem;
-  }
+  .project-card { padding: 1.3rem 1.1rem; }
   .project-card .project-header {
     flex-direction: column;
     align-items: flex-start;
   }
-  .page__title {
-    font-size: 2rem;
+  .page__title { font-size: 2rem; }
+  .cv-entry {
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
   }
 }
