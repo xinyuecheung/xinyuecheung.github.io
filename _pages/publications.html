@@ -1,36 +1,96 @@
 ---
-layout: archive
+layout: single
 title: "Publications"
 permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
+<p style="color: var(--ink-soft); font-style: italic;">
+Names are listed in author order. <span class="me">Underline</span> indicates my position when authorship is shared. Last updated April 2026.
+</p>
 
-{% include base_path %}
+---
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+## Peer-Reviewed Journal Articles
 
+<div class="pub-section" markdown="0">
 
+<div class="pub-entry">
+  <span class="pub-title">Guidance Misaligned? The Moderating Role of Perception Discrepancies in Parental Mediation Effects</span>
+  <div class="pub-authors">Liang Chen, Xinying Tan, <span class="me">Xinyue Zhang</span></div>
+  <div class="pub-venue">Mass Communication and Society <span class="pub-tag">Accepted</span></div>
+</div>
 
+</div>
+
+---
+
+## Manuscripts Under Review
+
+<div class="pub-section" markdown="0">
+
+<div class="pub-entry">
+  <span class="pub-title">Purification and Protection: How School and Family Sex Education Differentially Moderate the Effects of Pornography on Condomless Sex</span>
+  <div class="pub-authors"><span class="me">Xinyue Zhang</span>, Xintong Li, Yuxuan Li, Kun Tang</div>
+  <div class="pub-venue">Under review at <em>Journal of Medical Internet Research</em></div>
+</div>
+
+<div class="pub-entry">
+  <span class="pub-title">Detecting the Risk of Sexual Victimization among College Students: A Large-Scale Machine Learning Approach</span>
+  <div class="pub-authors"><span class="me">Xinyue Zhang</span>, Zheye Li, Hao Wang, Kun Tang</div>
+  <div class="pub-venue">Under review at <em>Computers in Human Behavior</em></div>
+</div>
+
+<div class="pub-entry">
+  <span class="pub-title">Extending the Technology Acceptance Model from a Perceived Risk–Benefit Perspective: Public Acceptance of AI-Based Rumor-Debunking Tools</span>
+  <div class="pub-authors">Xinying Tan, <span class="me">Xinyue Zhang</span>, Dajun Li, Liang Chen</div>
+  <div class="pub-venue"><em>Journalism Spring and Autumn</em> (Chinese-language journal) — Revise and Resubmit</div>
+</div>
+
+</div>
+
+---
+
+## Working Papers
+
+<div class="pub-section" markdown="0">
+
+<div class="pub-entry">
+  <span class="pub-title">Reviewing the Reviewers: Policy Framing and Error Trade-offs in LLM-Based Content Moderation</span>
+  <div class="pub-authors"><span class="me">Xinyue Zhang</span>, Yiting Miao</div>
+  <div class="pub-venue">Manuscript in preparation</div>
+</div>
+
+</div>
+
+---
+
+## Conference Presentations
+
+<div class="pub-section" markdown="0">
+
+<div class="pub-entry">
+  <span class="pub-title">When Morality Kidnaps Science: How Moral Expressions Drive Engagement and Moral Contagion in Scientific Misinformation <span class="pub-tag">Top Student Paper</span></span>
+  <div class="pub-authors"><span class="me">Zhang, X.</span>, Qiu, Q.</div>
+  <div class="pub-venue">Annual Conference of the International Communication Association (ICA), Science Communication Division, 2026 — <em>Oral presentation</em></div>
+</div>
+
+<div class="pub-entry">
+  <span class="pub-title">Why We Share Falsehoods: Testing a Coalitional Account of Misinformation Sharing</span>
+  <div class="pub-authors">Miao, Y., <span class="me">Zhang, X.</span></div>
+  <div class="pub-venue">Annual Conference of the International Communication Association (ICA), Computational Methods Division, 2026</div>
+</div>
+
+<div class="pub-entry">
+  <span class="pub-title">Guidance Misaligned? The Moderating Role of Perception Discrepancies in Parental Mediation Effects</span>
+  <div class="pub-authors">Chen, L., Tan, X., <span class="me">Zhang, X.</span></div>
+  <div class="pub-venue">Annual Conference of the Association for Education in Journalism and Mass Communication (AEJMC), Mass Communication and Society Division, 2025</div>
+</div>
+
+<div class="pub-entry">
+  <span class="pub-title">More Human or More Machine? The Effects of AI Involvement in Fact-Checking on Misinformation Correction</span>
+  <div class="pub-authors">Dong, Q., <span class="me">Zhang, X.</span>, Wang, X.</div>
+  <div class="pub-venue">Annual Conference on Information Behavior Research, 2024</div>
+</div>
+
+</div>
