@@ -7,45 +7,48 @@ redirect_from:
   - /about.html
 ---
 
-I am a graduate student jointly trained at **Tsinghua University** and the **University of Southern California**, with research interests in **misinformation**, **AI-mediated communication**, and **computational social science**.
+<div class="home-intro" markdown="1">
 
-My research examines how artificial intelligence systems—such as large language models and AI-assisted fact-checking tools—intervene in information ecosystems, and how human cognition, moral judgment, and social dynamics interact with algorithmic mediation. I combine **computational methods**, **experimental and survey designs**, and **AI-assisted text analysis** to study misinformation production, diffusion, and correction.
+I am a graduate student jointly trained at **Tsinghua University** (M.A. in Communication Data Science) and the **University of Southern California** (M.S. in Data Science). I study how **morality, cognition, and AI systems** jointly shape the way information — and *misinformation* — moves through public life.
+
+My current work sits at the intersection of three conversations: misinformation and moral psychology, AI-mediated communication, and computational social science. I ask questions like: *What makes a moralized falsehood spread further than a sober one? When an LLM moderates speech, whose harms does it overlook? Why do otherwise careful people share things they suspect are not true?*
+
+To answer these, I combine **large-scale computational text analysis** (LLM-as-judge, RAG pipelines, topic modeling), **experimental and survey designs**, and **machine learning** for social inference. A secondary line of my work brings these tools to **health risk communication**, particularly around adolescent and college-student well-being.
+
+I am applying to PhD programs for Fall 2026, and I'm actively looking for **research assistant opportunities** in the meantime. If any of this resonates with your work, I would love to hear from you.
+
+</div>
+
+---
+
+## Selected Highlights
+
+- 🏆 **ICA 2026 Top Student Paper**, Science Communication Division — *When Morality Kidnaps Science*
+- 📄 Forthcoming in *Mass Communication and Society* (SSCI Q1)
+- 🎤 Two papers accepted at **ICA 2026** (Science Communication & Computational Methods)
+- 🎓 GPA 4.00/4.00 at both Tsinghua (ranked **1/114**) and USC
 
 ---
 
 ## Research Interests
-- Misinformation and fact-checking
-- AI-mediated communication
-- Computational social science
-- Moral psychology and information diffusion
+
+- Misinformation, fact-checking, and moral psychology
+- AI-mediated communication and LLM-based content governance
+- Computational social science and large-scale text analysis
+- Health risk communication
 
 ---
 
 ## Education
-- **M.A. in Communication Data Science**, Tsinghua University (Dual Degree with USC)  
-  *GPA: 4.00/4.00, Ranked 1/114*
-- **M.S. in Data Science**, University of Southern California *(expected)*
-- **B.A. in Communication**, Wuhan University
+
+- **M.S. in Data Science**, University of Southern California *(2025 – 2026, expected)* · GPA 4.00/4.00
+- **M.A. in Communication Data Science**, Tsinghua University *(2024 – 2027, expected)* · Dual degree with USC · GPA 4.00/4.00, **ranked 1/114**
+- **B.A. in Communication**, Wuhan University *(2020 – 2024)* · Outstanding Graduate
 
 ---
 
-## Research Experience
-I have research experience across communication, public health, and computational social science. My work includes large-scale social media data analysis, AI-assisted text annotation, experimental design, and machine learning approaches to social problems.
+## Get in Touch
 
-I have collaborated with faculty at **Tsinghua University** and **Wuhan University**, contributing to projects on misinformation diffusion, AI-based fact-checking, and public opinion analysis. My research has been presented at international conferences such as the **International Communication Association (ICA)** and **AEJMC**, and has received recognition including a **Top Student Paper Award** from the ICA Science Communication Division.
+For ongoing project descriptions, see the **[Research](/research/)** page. A full **[CV](/files/Academic_CV.pdf)** is available for download.
 
----
-
-## Current Research
-My current projects focus on:
-- Moral framing and engagement dynamics in scientific misinformation
-- AI involvement in misinformation correction and public trust
-- LLM-assisted annotation pipelines and automated research workflows
-
-Please see the **[Research](/research/)** page for detailed descriptions of my ongoing and planned projects, including methodological explorations using **LLMs, RAG-based systems, and workflow automation**.
-
----
-
-## CV
-A full version of my curriculum vitae is available here:  
-**[Download CV](/files/Academic_CV.pdf)**
+The fastest way to reach me is by email: **[xinyuez2@usc.edu](mailto:xinyuez2@usc.edu)**.
