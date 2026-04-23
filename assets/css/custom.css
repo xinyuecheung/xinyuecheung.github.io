@@ -434,3 +434,5 @@ body,
     gap: 0.3rem;
   }
 }
+
+.theme-toggle { display: none !important; }
