@@ -7,12 +7,12 @@ author_profile: true
 
 <div class="research-intro" markdown="1">
 
-My research asks how **morality, cognition, and AI systems jointly shape the production, diffusion, and governance of (mis)information**. I move between two lines of work:
+My research centers on **misinformation**: how it is produced, why it spreads, and what happens when AI systems attempt to govern it. I move between two lines of work:
 
-- **Misinformation & moral psychology** — why people produce, share, and engage with false or distorted claims, and how moral expression amplifies these dynamics on social media.
+- **Misinformation dynamics** — what drives people to produce, share, and engage with false or distorted claims, and what features of misinformation, such as moral language and coalitional cues, amplify these dynamics on social media.
 - **AI as a communicative actor** — how large language models intervene in information ecosystems, from fact-checking and content moderation to retrieval-augmented annotation pipelines.
 
-Methodologically, I combine **large-scale computational text analysis (LLM-as-judge, RAG, topic modeling)**, **experiments and surveys**, and **machine learning** for social inference. A secondary line of work applies these tools to **health risk communication**, particularly around adolescent and college-student well-being.
+Methodologically, I combine **large-scale computational text analysis** (LLM-as-judge, RAG, topic modeling), **experiments and surveys**, and **machine learning** for social inference. A secondary line of work applies these tools to **health risk communication**, particularly around adolescent and college-student well-being.
 
 </div>
 
