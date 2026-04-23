@@ -9,13 +9,11 @@ redirect_from:
 
 <div class="home-intro" markdown="1">
 
-I am a graduate student jointly trained at **Tsinghua University** (M.A. in Communication Data Science) and the **University of Southern California** (M.S. in Data Science). I study how **morality, cognition, and AI systems** jointly shape the way information — and *misinformation* — moves through public life.
+I am a graduate student jointly trained at **Tsinghua University** (M.A. in Communication Data Science) and the **University of Southern California** (M.S. in Data Science). I study **misinformation**, focusing on how it is produced, why it spreads, and what happens when AI systems try to contain it.
 
-My current work sits at the intersection of three conversations: misinformation and moral psychology, AI-mediated communication, and computational social science. I ask questions like: *What makes a moralized falsehood spread further than a sober one? When an LLM moderates speech, whose harms does it overlook? Why do otherwise careful people share things they suspect are not true?*
+My current work sits at the intersection of **misinformation research**, **AI-mediated communication**, and **computational social science**. I ask questions like: *Why do otherwise careful people share things they suspect are not true? When an LLM moderates speech, whose harms does it overlook? What features of false claims, such as moral language, coalitional cues, and narrative framing, make them travel further than accurate ones?*
 
 To answer these, I combine **large-scale computational text analysis** (LLM-as-judge, RAG pipelines, topic modeling), **experimental and survey designs**, and **machine learning** for social inference. A secondary line of my work brings these tools to **health risk communication**, particularly around adolescent and college-student well-being.
-
-I am applying to PhD programs for Fall 2026, and I'm actively looking for **research assistant opportunities** in the meantime. If any of this resonates with your work, I would love to hear from you.
 
 </div>
 
