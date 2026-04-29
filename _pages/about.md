@@ -45,8 +45,8 @@ To answer these, I combine **large-scale computational text analysis** (LLM-as-j
 
 ---
 
-## Get in Touch
+---
 
-For ongoing project descriptions, see the **[Research](/research/)** page. A full **[CV](/files/Academic_CV.pdf)** is available for download.
+## Beyond Research
 
-The fastest way to reach me is by email: **[xinyuez2@usc.edu](mailto:xinyuez2@usc.edu)**.
+When I'm not writing papers, you'll most likely find me in the kitchen. I'm a devoted home cook who takes Chinese cuisine seriously and has a growing love for Western pastries. Hiking is how I recharge — there's nothing like a long trail to clear a cluttered mind. I'm also an enthusiastic runner of TV marathons and a dedicated K-pop fan who occasionally dances along. My most loyal companion through all of this is my miniature schnauzer, who has strong opinions about my screen time.
