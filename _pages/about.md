@@ -43,7 +43,6 @@ To answer these, I combine **large-scale computational text analysis** (LLM-as-j
 - **M.A. in Communication Data Science**, Tsinghua University *(2024 – 2027, expected)* · Dual degree with USC · GPA 4.00/4.00, **ranked 1/114**
 - **B.A. in Communication**, Wuhan University *(2020 – 2024)* · Outstanding Graduate
 
----
 
 ---
 
