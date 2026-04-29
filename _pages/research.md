@@ -92,7 +92,7 @@ Methodologically, I combine **large-scale computational text analysis** (LLM-as-
 </div>
 <p class="project-subtitle">A Machine Learning Comparison of Risk Factors for Contact and Non-Contact Sexual Victimization Among Chinese College Students</p>
 
-**Role.** Co-first author.
+**Role.** First author.
 
 **Question.** Sexual victimization research typically aggregates contact and non-contact harms into a single outcome. But the digital era has generated a distinct ecology of non-contact victimization, including image-based abuse, sextortion, and platform-facilitated harassment, that may be governed by fundamentally different risk architectures. Do contact and non-contact victimization share the same predictors, or does treating them as one phenomenon obscure the very differences that prevention needs to address?
 
